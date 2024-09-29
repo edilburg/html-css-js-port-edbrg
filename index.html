@@ -1,101 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <nav id="dekstop-nav">
-        <div class="logo">Edil Burga</div>
-        <div>
-            <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Edil Burga Aditya Sinaga</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Edil Burga</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+      <div class="logo">Edil Burga Aditya Sinaga</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Edil Buarga Profile Picture">
+      <div class="section__pic-container">
+        <img src="./assets/Foto_Edil.jpeg" 
+        alt="Edil Burga profile picture" 
+        class="profile-pic"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi there, I'm</p>
+        <h1 class="title">Edil Burga Aditya Sinaga</h1>
+        <p class="section__text__p2">Full-stack Data Analytics</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Edil Burga</h1>
-            <p class="section__text__p2">Full-stack Data Analytics</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" 
-                onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
-                <button class="btn btn-color-1" 
-                onclick="location.href='./#contact'">Contact Info</button>    
-            </div>
-            <div id="social-container">
-                <img src="./assets/linkedin.png" 
-                alt="My linkedin Profile" 
-                class="icon" onclick="location.href='http://www.linkedin.com/in/edil-burga-5877272a8'">
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='http://www.linkedin.com/in/edil-burga-5877272a8'"
+          />
         </div>
+      </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" 
-                alt="Profile picture"
-                class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                        src="./assets/experience.png" 
-                        alt="Experience icon"
-                        class="icon"/>
-                        <h3>Working Experience</h3>
-                        <p>2+ Years <br />Store Assistant Manager</p> 
-                    </div>
-                    <div class="details-container">
-                        <img 
-                        src="./assets/education.png" 
-                        alt="Education icon"
-                        class="icon"/>
-                        <h3>Education</h3>
-                        <p>Bachelor of Computer Science (S.Kom.)<br />in Information Systems</p> 
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quos maxime, ratione aut in nisi accusamus, nulla nostrum magni placeat dolor? Fugiat nam sequi aperiam aut beatae eaque provident officiis?
-                    </p>               
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Foto_Edil.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow icon" 
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Driven by a passion for data, I excel at transforming complex challenges into actionable insights. I recently completed a Data Analysis course at RevoU, where I analyzed the Zomato Delivery Operations dataset, uncovering critical factors affecting delivery times and crafting data-driven recommendations expected to enhance efficiency by 10%. Proficient in Python, Tableau, and Google Sheets, I leverage strong analytical skills to deliver clarity and impact. My strengths lie in identifying key issues, developing actionable strategies, and effectively communicating findings. Recognized for my problem-solving abilities, I translate data into meaningful insights while demonstrating a commitment to continuous learning and growth. I am confident that my unique approach to data analysis will make a significant contribution to your data team’s success.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
-        />
+        onclick="location.href='./#skills'"
+      />
     </section>
+
+    <section id="skills">
+      <div class="container">
+          <h2 class="section-title">Skills</h2>
+  
+          <div class="features-grid">
+              <div class="feature-item">
+                  <div class="feature-icon">
+                    <img src="./assets/excel.png" alt="Excel icon" class="icon-skill">
+                   </div>
+                  <h3 class="feature-title">Excel</h3>
+                  <p class="feature-description">Intermediate</p>
+              </div>
+              <div class="feature-item">
+                  <div class="feature-icon">
+                        <img src="./assets/python.png" alt="Python icon" class="icon-skill">
+                       </div>
+                  <h3 class="feature-title">Python</h3>
+                  <p class="feature-description">Intermediate</p>
+              </div>
+  
+          </div>
+          <div class="features-grid">
+              <div class="feature-item">
+                  <div class="feature-icon">
+                    <img src="./assets/bigquery.png" alt="Bigquery icon" class="icon-skill">
+                   </div>
+                  <h3 class="feature-title">Google BigQuery</h3>
+                  <p class="feature-description">Intermediate</p>
+              </div>
+              <div class="feature-item">
+                  <div class="feature-icon">
+                    <img src="./assets/tableau.png" alt="Tableau icon" class="icon-skill">
+                   </div>
+                  <h3 class="feature-title">tableau</h3>
+                  <p class="feature-description">Intermediate</p>
+              </div>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+    </section>
+
+    <section id="education">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Education</h1>
+      <div class="education-container">
+        <div class="education-header">
+            <h2>Non-degree in Full-stack Data Analytics</h2>
+            <span>March, 2024 - September, 2024</span>
+        </div>
+        <div class="education-details">
+            <p>RevoU</p>
+        </div>
+        <div class="education-activities">
+            <ul>
+              At RevoU, I completed a rigorous Full-stack Data Analytics program designed to provide end-to-end proficiency in the data analysis process. Through hands-on experience, I developed expertise in extracting, cleaning, and analyzing complex datasets using tools such as SQL, Python, and Excel. I also honed my skills in data visualization with industry-standard platforms like Tableau and Power BI, transforming raw data into insightful visual narratives. Additionally, I refined my ability to present data-driven recommendations to solve real-world business challenges, strengthening both my technical and analytical acumen.
+            </ul>
+        </div>
+    </div>
+
+    <div class="education-container">
+        <div class="education-header">
+            <h2>Bachelor of Information System (S.Kom)</h2>
+            <span>August, 2017 – October, 2021</span>
+        </div>
+        <div class="education-details">
+            <p>Binus University</p>
+            <p>GPA: 2.7 out of 4.0</p>
+        </div>
+        <div class="education-activities">
+            <ul>
+                During my time at Binus University, I gained a strong foundation in Information Systems, focusing on the intersection of technology and business. I developed skills in database management, system analysis, and software development, enabling me to design and implement efficient solutions for real-world business challenges. My coursework covered topics such as data structures, programming, business process modeling, and IT project management, equipping me with both technical and analytical skills essential for the modern digital landscape.
+            </ul>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/zomato-project.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Zomato Analysis Project</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1w3krcp2hZ18lPA1W5TJEpmsCKdU-jvBW/view?usp=sharing'"
+              >
+                PDF
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:edilburgasinaga@gmail.com">edilburgasinaga@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="http://www.linkedin.com/in/edil-burga-5877272a8">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
